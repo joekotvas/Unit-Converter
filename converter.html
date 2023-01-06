@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Unit Converter</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="converter.css">
+        <script src="converter.js"></script>
+    </head>
+    <body>
+        <main id="converter">
+            <section id="input">
+                <h1>Metric/Imperial Unit Conversion</h1>
+                <form id="form" autocomplete="off">
+                    <input type="text" name="x" id="x" placeholder="" value="1">
+                    <button type="button" id="convert-btn">Convert</button>
+                </form>
+            </section>
+            <section id="result">
+                <section>
+                    <h2>Length (Meter/Feet)</h2>
+                    <p class="outputs">
+                        <output id="x-m" class="x-output">0</output> m = <output id="y-ft" class="y-output" data-factor="m-ft">0</output> ft |
+                        <output id="x-ft" class="x-output">0</output> ft = <output id="y-m" class="y-output" data-factor="ft-m">0</output> m
+                    </p>
+                </section>
+                <section>
+                    <h2>Volume (Liters/Gallons)</h2>
+                    <p class="outputs">
+                        <output id="x-l" class="x-output">0</output> L = <output id="y-gal" class="y-output" data-factor="l-gal">0</output> gal |
+                        <output id="x-gal" class="x-output">0</output> gal = <output id="y-l" class="y-output" data-factor="gal-l">0</output> L
+                    </p>
+                </section>
+                <section>
+                    <h2>Mass (Kilograms/Pounds)</h2>
+                    <p class="outputs">
+                        <output id="x-kg" class="x-output">0</output> kg = <output id="y-lb" class="y-output" data-factor="kg-lb">0</output> lb |
+                        <output id="x-lb" class="x-output">0</output> lb = <output id="y-kg" class="y-output" data-factor="lb-kg">0</output> kg
+                    </p>
+                </section>
+            </section>
+        </main>
+    </body>
+</html>
