@@ -1,2 +1,2 @@
 # Unit-Converter
- Simple Portfolio Project converting Metric to and from Imperial
+This is a simple Portfolio Project converting Metric units to and from Imperial.
